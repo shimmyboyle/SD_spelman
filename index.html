@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>PROMPT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Input a prompt you want to see on the screen!</h1>
+      <form id="myForm">
+        <textarea 
+          id="promptInput" 
+          name="prompt" 
+          placeholder="A dancing body made of clouds."
+        ></textarea>
+        <input type="button" onclick="sendPrompt()" value="Submit Prompt">
+        <div class="prompt-info">
+          Each prompt lasts 20 seconds.<br>
+          Your will show in the order it was received.
+        </div>
+        <div id="textField" style="display: none;">
+          ❗️The input is empty.
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
